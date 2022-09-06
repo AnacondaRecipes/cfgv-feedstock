@@ -12,15 +12,15 @@ source:
 
 build:
   number: 0
+  skip: True  # [py<37]
   script: pip install . --no-deps --ignore-installed
-  noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.6.1
+    - python
   run:
-    - python >=3.6.1
+    - python
 
 test:
   imports:

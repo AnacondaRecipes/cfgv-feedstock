@@ -39,6 +39,8 @@ about:
   license_family: MIT
   summary: Validate configuration and produce human readable error messages.
   description: Validate configuration and produce human readable error messages.
+  dev_url: https://github.com/asottile/cfgv
+  doc_url: https://github.com/asottile/cfgv
 
 extra:
   recipe-maintainers:

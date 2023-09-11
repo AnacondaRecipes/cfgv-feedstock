@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   skip: True  # [py<37]
-  script: pip install . --no-deps --no-build-isolation --ignore-installed
+  script: pip install . --no-deps --no-build-isolation --ignore-installed -vv
 
 requirements:
   host:
@@ -24,10 +24,10 @@ requirements:
     - python
 
 test:
-  requires:
-    - pip
   imports:
     - cfgv
+  requires:
+    - pip
   commands:
     - pip check
 
